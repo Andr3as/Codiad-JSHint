@@ -1,0 +1,72 @@
+.jshint-indicator {
+    bottom: 4px;
+    cursor: pointer;
+    float: left;
+    font-size: 200%;
+    position: relative;
+}
+
+.jshint-indicator .icon-check{
+    color: green;
+}
+
+.jshint-indicator .icon-attention {
+    color: orange;
+}
+
+.jshint-panel {
+    background: url("../../themes/default/editor/gutter-bg.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: 25px;
+    height: 150px;
+    margin-right: 10px;
+    overflow: auto;
+    padding: 0 0 5px 10px;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.jshint-panel-close {
+    cursor: pointer;
+    font-size: 150%;
+    position: fixed;
+    right: 30px;
+    bottom: 150px;
+    z-index: 1;
+}
+
+.jshint-table td {
+    border: 0;
+}
+
+.jshint-table .line-number {
+    cursor: pointer;
+    width: 35px;
+}
+
+.jshint-table .line-number, .jshint-table .message {
+    cursor: pointer;
+}
+/* Options tables */
+.jshint-options {
+    width: 200px;
+    display: inline-table;
+}
+.jshint-options tr label {
+    width: 100px;
+}
+.jshint-options th label {
+    width: 200px;
+}
+.jshint-options tr select, .jshint-options tr input {
+    display: inline;
+    margin: 0;
+    width: 100px;
+}
+.jshint-options input {
+    line-height: 18px;
+}
+.settings-jshint a {
+    color: white;
+}
