@@ -131,7 +131,7 @@
         getOptions: function() {
             var global_config = localStorage.getItem('codiad.plugin.jshint.config');
             if (global_config === null) {
-                global_config = [];
+                global_config = {};
             } else {
                 global_config = JSON.parse(global_config);
             }
