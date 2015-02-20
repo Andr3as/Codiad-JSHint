@@ -106,6 +106,6 @@
         <td colspan="2"><label style="width: 200px;">Global variables</label></td>
         <td colspan="2"><input class="jshint-globals" type="text" style="width: 220px;"></td>
     </table>
-    <p>Check <a href="http://jshint.com/docs/options">JSHint</a> for more details.</p>
+    <p>Check <a href="http://jshint.com/docs/options" target="_blank">JSHint</a> for more details.</p>
 	<p>Global settings are overwritten by local .jshintrc files.</p>
 </form>

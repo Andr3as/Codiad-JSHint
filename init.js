@@ -82,8 +82,8 @@
                 $('.jshint').hide();
                 $('.jshint-panel').hide();
             });
-            amplify.subscribe('settings.dialog.tab_loaded', function(file){
-                if (/jshint/i.test(file)) {
+            amplify.subscribe('settings.dialog.tab_loaded', function(name){
+                if (name == "JSHint") {
                     _this._loadGlobalSettings();
                 }
             });
@@ -114,6 +114,9 @@
                 table  += '<th class="title" colspan="2">Errors</th>';
             }
             for (var i = 0; i < errors.length; i++) {
+                if (errors[i] === null) {
+                    continue;
+                }
                 table += this.createLine(errors[i].line, errors[i].character, errors[i].reason);
             }
             data.unused = data.unused || [];
@@ -155,6 +158,13 @@
 
         togglePanel: function() {
             $('.jshint-panel').toggle();
+            var height = parseInt($('#root-editor-wrapper').height(), 10);
+            if ($('.jshint-panel:visible').length > 0) {
+                $('#root-editor-wrapper').height(height - 150);
+            } else {
+                $('#root-editor-wrapper').height(height + 150);
+            }
+            codiad.editor.resize();
         },
 
         createLine: function(line, col, msg) {
