@@ -9,7 +9,7 @@ Validate your JS code with JSHint.
 - Download the zip file and unzip it to your plugin folder.
 
 ##Requirements
-- Requiers modern browser with web worker.
+- Requires modern browser with web worker.
   - FF >= 3.5
   - Chrome >= 4
   - IE >= 10
