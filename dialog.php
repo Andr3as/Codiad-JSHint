@@ -6,6 +6,7 @@
 -->
 <form class="settings-jshint">
     <label><span class="icon-gauge big-icon"></span> JSHint options</label>
+    <hr>
     <table class="jshint-options">
         <tr><th colspan="2"><label>Enforcing options</label></th></tr>
         <?php

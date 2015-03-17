@@ -82,6 +82,10 @@
                 $('.jshint').hide();
                 $('.jshint-panel').hide();
             });
+            amplify.subscribe('active.onRemoveAll', function(){
+                $('.jshint').hide();
+                $('.jshint-panel').hide();
+            });
             amplify.subscribe('settings.dialog.tab_loaded', function(name){
                 if (name == "JSHint") {
                     _this._loadGlobalSettings();
